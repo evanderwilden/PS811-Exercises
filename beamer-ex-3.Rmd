@@ -1,0 +1,38 @@
+---
+title: "PS856, Week 5: Regime Types"
+author: "Ethan vanderWilden"
+date: "30 September 2020"
+output: beamer_presentation
+theme: "Berlin"
+colortheme: "beaver"
+fonttheme: "structurebold"
+bibliography: regimetype.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Highlights of the Readings
+
+- @claassenMoodDemocracyDemocratic2020 presented the most interesting model. I thought that the idea of thermostatic opinion was interesting, unexpected, and compelling. I think that such a model can be extended to far more areas of research beyond democratic mood as well.
+- The disagreement between @acemogluIncomeDemocracy2008 and @svolikAuthoritarianReversalsDemocratic2008 on the impact of income on democracy should make for interesting discussion in our seminar
+
+\framebreak
+## Critiques of the Readings
+
+- None of the readings asses the issue of trust and mutual toleration. I think that @przeworskiDemocracy1999 would greatly benefit from a discussion of trust in his piece. Without it, I worry that his model is oversimplified.
+- While @magaloniCrediblePowerSharingLongevity2008 makes a convincing and interesting argument, it fails to address why single-party dictatorships outlive multi-party dictatorships. While I can intuitivly understand why this might be the case, I think that the finding actually conflicts with the model presented in this article.
+
+\framebreak
+## References
+\tiny
+\begingroup 
+\setlength{\parindent}{-0.1in}
+\setlength{\leftskip}{0.1in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
+
+
