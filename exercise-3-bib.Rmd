@@ -1,0 +1,115 @@
+---
+title             : "Seminar Readings for the Week of 28 September 2020"
+shorttitle        : "Bibliogaphy exercise for ps 811"
+
+author: 
+  - name          : "Ethan vanderWilden"
+    affiliation   : "1"
+    corresponding : no    # Define only one corresponding author
+    email         : "ethan.vanderwilden@wisc.edu"
+    role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
+      - Conceptualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+
+
+affiliation:
+  - id            : "1"
+    institution   : "University of Wisconsin-Madison, Department of Political Science"
+
+
+
+
+
+
+
+
+bibliography      : ["rev.bib", "r_type.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+r_refs("rev.bib")
+r_refs("r_type.bib")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+# PS 804: Capitalism and Religion
+
+
+*NOTE: These pieces are much more theory/history/religion based. They are not traditional works of Political Science, so in my summaries I do not include the same framework as laid out in the exercise guidelines.
+
+[@engelsPeasantWarGermany2015]
+
+Engles compares his present moment (1850 Germany) with the Peasant War in Germany throughout the 16th centry. In this "war" (really a series of smaller uprisings and battles), one can notice how class division ultimately hurt those fighting to gain representation. The burghers (let here by Luther), were unwilling to compromise with peasants (led by Munzer) in unity against the upper nobility. Fractured, the burghers were defeated by the upper nobility, and ultimately sought protection in the prince-class against uprising peasants. The wars led to death, destruction of property, and gains only for the upper nobility. I think this piece relates to our larger discussion as both a demonstration of proletariat disunity as well as a commentary on early hints at atheism within a proletariat (though not yet the vocabulary) movement.
+
+[@luxemburgSocialismChurches1905]
+
+Luxemburg condemns the church/clergy in this piece, arguing that they offer the people nothing but sermons. She notes the early history of Christian communism, one that sought the redistribtuion of consumption goods without the redistribution of ownership over the means of production. Ultimately, this early Christianity changed from serving those in need to taking from those in need in the form of tithes and excess labor. Modern (of in her time, modern) Christianity no longer resembles this form of Christian communism. The piece transitions to a near-advertisment in favor of the Social Democratic Party (in Poland), arguing that it is a party promoting freedom of conscience, revolution, and redistribution.
+
+[@leninSocialismReligion1905]
+
+Lenin's piece is an explanation as to where religion fits in with his socialist project in Russia. He argues that religion preaches complaceny and patience, a message incompatible with socialist revolution. However, he does not want to force atheism onto potential recruits. Rather, he argues that within the process of revolution, those in the movement will realize that a Socialist is an Atheist.
+
+[@goldmanFailureChristianity1913]
+
+Goldman writes in a militant-atheist style. Unlike Luxemburg, she finds no redeeming qualities in religion, especially that of Christ. She argues that Christianity is and always will be a system promoting a perpetual slave society given its promise of delayed gratification (heaven).
+
+[@trotskyVodkaChurchCinema1923]
+
+In the wake of the Bolshevik Revolution, Trotsky now notes that workers have a true 8 hours of leisure time in each day. The resulting question is what to do with such time. Trotsky argues that the options are Vodka (drinking), the Church, and the Cinema. Both Vodka and Church are a form of opium--somethng distracting that does not actually deliver anything to Man. The cinema, however, could prove to be of use to the state as a platform for education and propaganda.
+
+
+# PS 856: Comparative Politics Field Seminar
+
+[@przeworskiDemocracy1999]
+
+Przeworski sets out to define democracy and understand why its "losers" may comply with their losses. The defining characteristics associated with democracy relate to its uncertainty, its guarantee of winners and losers, and its emphasis on competition. To answer the question of why democratic losers comply with their losses, he creates a formal model to explain the cost-benefit analysis of democratic decision makers. He argues that long-term calculations and potential outweigh the immediate benefits of non-compliance.
+
+[@acemogluIncomeDemocracy2008]
+
+Acemoglu et al. explore the relationship between income and democracy. They question the widespread view that regimes with greater levels of income (GDP per capita) correspondingly have higher levels of democracy. They use both cross-country and cross-temporal data to run regression analyses testing the strength of this relationship with the inclusion of confounding variables and fixed-effects. Ultimately, they conclude that income and democracy are not actually related.
+
+[@magaloniCrediblePowerSharingLongevity2008]
+
+Magaloni asks the question of how dictators stay in power. Specifically, she focuses on the dictator credibility dilemma--that a dictator does not actually have to reward loyalists. She presents a model in which dictators gain credibility via the presence of parties, which guarentees power-sharing. Surveying 7,094 regimes between 1950-2000, Magaloni uses Kaplan-Meier survival estimates to demonstrate that single-party dictatorships have far longer expected survival rates than military dictatorships.
+
+[@svolikAuthoritarianReversalsDemocratic2008]
+
+Svolik is concerned with how different components on a regime may affect the survival of a regime. Svolik separates cases by whether they represent “consolidated” democracies. This creates two, more specific, questions: What predicts a consolidated democracy? and what predicts authoritarian backsliding in transitional democracies. Svolik uses regime-type data compiled by Boix and Rosato (2001) and performs multiple logistic regressions on the data. He finds that economic development (positive), military authoritarian past (negative), and presidentialism (negative) are significant predictors of consolidation-status. He also finds that economic recession is the single important predictor in authoritarian backsliding in transitional democracies.
+
+[@claassenMoodDemocracyDemocratic2020]
+
+Claassen asks the question of how public attitudes towards democracy relate to actual changes in levels of democracy. Instead of the conventional wisdom of democracy as a self-reinforcing process, Claassen finds that democratic mood is better understood through a thermostatic model—essentially, a negative feedback loop. To test this, Classes uses a database of "3,768 nationally aggregated opinions, gathered by 14 survey projects using 1,391 nationally representative surveys" (40). Using a general error correction model, Classes confirms this hypothesis, and, more specifically, finds that increases in liberal democracy and minoritarian policy decreases democratic mood.
+
+[@wuttkeWhenWholeGreater2020]
+
+Wuttke et al. work on populism and attitudes towards a regime. Their work is mostly concerned with definitions, arguing that the ways in which we measure populist attitudes affects our substantive conclusions. As a multidimensional attitude, they clarify different conceptualizations of populism based on its treatment as dichotomous or continuous, as well as its treatment as compensatory or non-compensatory. Using three data sources--the Campaign Panel 2017 of the German Longitudinal Election Study, at German electin study with CAPI from the fall of 2017, and data collected by Castanho Silva et al. (2018-19)--they compare different coneptualizations of populism and how similar they are. They find that different conceptualizations affects empirical findings. Additionally, they argue that the most useful conceptualization of populism falls into the non-compensatory and continuous definitions.
+
+\newpage
+
+# References
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
