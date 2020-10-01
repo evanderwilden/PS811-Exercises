@@ -24,7 +24,7 @@ affiliation:
 
 
 
-bibliography      : ["rev.bib", "r_type.bib"]
+bibliography      : ["revolution.bib", "regimetype.bib"]
 
 floatsintext      : no
 figurelist        : no
@@ -41,8 +41,8 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
-r_refs("rev.bib")
-r_refs("r_type.bib")
+r_refs("revolution.bib")
+r_refs("regimetype.bib")
 ```
 
 ```{r analysis-preferences}
@@ -102,6 +102,7 @@ Claassen asks the question of how public attitudes towards democracy relate to a
 [@wuttkeWhenWholeGreater2020]
 
 Wuttke et al. work on populism and attitudes towards a regime. Their work is mostly concerned with definitions, arguing that the ways in which we measure populist attitudes affects our substantive conclusions. As a multidimensional attitude, they clarify different conceptualizations of populism based on its treatment as dichotomous or continuous, as well as its treatment as compensatory or non-compensatory. Using three data sources--the Campaign Panel 2017 of the German Longitudinal Election Study, at German electin study with CAPI from the fall of 2017, and data collected by Castanho Silva et al. (2018-19)--they compare different coneptualizations of populism and how similar they are. They find that different conceptualizations affects empirical findings. Additionally, they argue that the most useful conceptualization of populism falls into the non-compensatory and continuous definitions.
+
 
 \newpage
 
