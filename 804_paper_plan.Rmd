@@ -1,0 +1,47 @@
+---
+title: "Plan for PS804 Paper"
+author: "Ethan vanderWilden"
+date: "29 October 2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Context
+I am writing a term paper (15-20 pages) for PS804. This is an interdisciplinary European Studies seminar focused on the relationship between Capitalism and Religion. 
+
+## Question of Interest
+In the 21st century, many Western European publics have become more secular. Accordingly, parties that used to depend on religious voting (mainly Christian Democratic Parties) had to modify their platforms to have more secular electoral appeals. This process is cited as a reason for religious dealignment in the 21st century--namely that the correlation between religiosity and right-ideologies has weakened.
+
+However, some radical right parties offer explicitly religious programs, or at least claim to be defenders of religion against a 'secular political correctness.' Thus, my driving research question is the following: Does the appearance of a popular radical right party realign the electorate on religious grounds. 
+
+For the purpose of this paper, I will focus on the case of Spain. The emergence of the Vox party in 2018 and 2019 offers a fresh case to test this theory in a country with a prevalent catholic religious culture. Furthermore, I have some experience with the setting, language, and dataset, which makes this project feasible.
+
+
+## Independent and Dependent Variables
+I want to run two tests to develop this claim. First, I want to test whether religiosity is a good predictor of voting for said party. One would expect that a party promoting explicit religious appeals may win a greater proportion of the religious vote. 
+
+Second, I want to test whether the correlation between religiosity and right-ideology (as well as party support) has strengthened with the emergence of Vox.
+
+These call for the following variables: \newline
+Main IV: Religiosity\newline
+Main DVs: Party Support and left-right Ideology
+
+
+## Measuring Variables
+Religiosity is measured by church attendance. \newline
+Right ideologies is measured with a question that asks about ideology. \newline
+Party voting is measured with a question that asks who the respondent voted for in the last election.
+
+## Data
+I will use data from the Centro de Investigaciones Sociologicas. This is a commonly used datasource on Spanish public opinion. They have available (and free) barometers going back many many years that ask questions that encompass my variables.
+
+## Methods
+I think on the first test that I mentioned, I will run a few regression models (maybe a logit regression for binary support of Vox or non-support, maybe a linear regression with parties ranked by ideology, which the survey also has data for).
+
+For the second test, I am not yet sure. I've seen the dealignment argument presented just as a list of correlations over time where the authors point out the gradual decline. I am wondering if it may be sufficient to just report the correlations over time here as well and make comments.
+
+I would love any feedback on methods or really anything! Thank you!
+
