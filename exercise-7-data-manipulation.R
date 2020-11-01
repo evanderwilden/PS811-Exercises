@@ -27,7 +27,7 @@ Senate_vote <- c("52-48","96-3","87-9","78-22","58-42",
 Nominated_by <- c("George HW Bush", "Bill Clinton", 
                   "Bill Clinton", "George W Bush",
                   "George W Bush", "Barack Obama",
-                  "Barack Obama", "Donal Trump", 
+                  "Barack Obama", "Donald Trump", 
                   "Donald Trump")
 SCJustices <- data.frame(Justice,State,Position,Replacing,
                          Year, Senate_vote, Nominated_by)
@@ -36,6 +36,7 @@ SCJustices <- data.frame(Justice,State,Position,Replacing,
 
   ###Task 2
 #downloading justices.csv (and loading it)
+# ms: in the future, consider putting all your datasets in a "data" folder and using the "here" package to load them in
 justices <- read.csv("justices.csv")
 
   ###Task 3
@@ -59,7 +60,8 @@ table(joined_justices$justiceName)
   ###Task 4
 #Filter to justices with Martin-Quinn Scores
 filter(joined_justices, post_mn == TRUE)
-
+# ms: consider this:
+# filter(joined_justices, !is.na(post_mn))
 
   ###Task 5
 #Find mean martin quinn score for each term
@@ -94,6 +96,9 @@ print(decision_byterm, n = nrow(decision_byterm))
 mq_decision_compare <- inner_join(mq_byterm, decision_byterm,
                                   by="term")
 #QUESTION: Why is this keeping the NAs?
+# ms: the reason why it's keeping everything from 1937-1945 is because when you created the "decision_byterm" tibble, you used the "joined_justices,"
+# which includes all years because it was created via a full_join
+# since you are joining by term, the the year value also exists in "decision_byterm" even though it doesn't have a decisionDirection value
 colnames(mq_decision_compare) <- c("term", "MQ Score", "Vote Direction")
 view(mq_decision_compare)
 
