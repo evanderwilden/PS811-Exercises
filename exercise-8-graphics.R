@@ -21,6 +21,18 @@ boxplot(USArrests$Rape, main = "Boxplot for US Rape Arrests by State",
 barplot(USArrests$Rape, main = "Barplot for US Rape Arrests by State",
         ylab = "Number of Arrests (per 100,000)")
 
+### ms: I would label the states for the above base R plot
+
+barplot(USArrests$Rape,
+        names = row.names(USArrests),
+        main = "Barplot for U.S. Rape Arrests by State",
+        ylab = "Number of Arrests per 100,000",
+        las = 2,
+        cex.names = 0.5
+        )
+
+###
+
 #Histogram for % Urban Population
 hist(USArrests$UrbanPop, main = "Histogram of % Urban Population",
      xlab = "Percent Urban Population", prob = TRUE)
