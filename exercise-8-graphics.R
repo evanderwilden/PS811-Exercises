@@ -8,6 +8,8 @@ USArrests
 
           ####   BASE R   ####
 
+# ms: the question asks for assault vs. murder arrests but otherwise, this looks good!
+
 #Scatterplot for Rape arrests vs Murder Arrests
 plot(USArrests$Rape, USArrests$Murder, 
      main = "Relationship between \n Rape and Murder Arrests",
