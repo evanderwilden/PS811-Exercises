@@ -163,7 +163,7 @@ stargazer2(models, odd.ratio = T, type = "latex",
 
 ```{r}
 #Coefficient plot
-vars <- c('anes_test$homeowner' = 'Homeowner?',
+vars <- c('anes_test$homeowner' = 'Homeowner?', # ms: I would argue that the question mark is not necessary since you aare graphing homeowner = 1...
           'anes_test$age' = 'Age',
           'anes_test$gender' = 'Gender',
           'anes_test$race' = 'Race')
