@@ -201,6 +201,7 @@ View(congress111)
 
 # identify which column contains the Sotomayor votes by downloading the dictionary
 # it seems like V263 is the Sotomayor vote column
+# ms: V262 is the Sotomayor vote column...it is on row 263 but you need to account for the header...
 congress111_sotomayor <- congress111 %>%
   select(cong:name, V263) %>%
   filter(name != "OBAMA") # filter out the president
